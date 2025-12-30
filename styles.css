@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'League Spartan';
+    scrollbar-width: none;
+}
+
+body{
+    margin: 0;
+    width: 100dvw;
+}
+
+h1, h2, h3{
+    text-transform: uppercase;
+}
+
+h3{
+    letter-spacing: .1rem;
+}
+
+p{
+    color: hsl(0, 0%, 63%);
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+button{
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+#firstWrapper{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    padding: 2rem;
+    width: 100%;
+}
+
+#menuButton{
+    display: flex;
+    background: none;
+    border: none;
+    position: absolute;
+    left: 1rem;
+}
+
+#navigateButtons{
+    position: absolute;
+    right: 0;
+    background-color: black;
+    transform: translateY(-3.8rem);
+}
+
+#navigateButtons button{
+    background-color: black;
+    border: none;
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+#shopNowButton{
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+ul{
+    list-style: none;
+    gap: 1rem;
+}
+
+nav{
+    display: none;
+}
+
+nav.active{
+    display: flex;
+}
+
+.heroImg{
+    width: 100%;
+}
+
+.first{
+
+}
+
+.second{
+    display: none;
+}
+
+.third{
+    display: none;
+}
+
+.textWrapper{
+    padding-inline: 1rem;
+}
+
+#secondWrapper img{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+footer{
+    display: none;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
