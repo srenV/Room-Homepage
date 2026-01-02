@@ -1,123 +1,242 @@
+/* ============================================
+   IMPORTS
+   ============================================ */
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
+/* ============================================
+   GLOBAL STYLES
+   ============================================ */
+
+/* Universal selector - reset and defaults */
 * {
     box-sizing: border-box;
-    font-family: 'League Spartan';
+    font-family: 'League Spartan', sans-serif;
     scrollbar-width: none;
 }
 
-body{
+/* Body container */
+body {
     margin: 0;
     width: 100dvw;
     overflow-x: hidden;
 }
 
-h1, h2, h3{
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+/* Headings - uppercase text */
+h1, h2, h3 {
     text-transform: uppercase;
 }
 
-h3{
+/* Heading 3 specific styling */
+h3 {
     letter-spacing: .1rem;
 }
 
-p{
+/* Paragraph text */
+p {
     color: hsl(0, 0%, 63%);
     font-weight: 500;
     line-height: 1.2;
 }
 
-button{
+/* ============================================
+   BUTTONS AND INTERACTIVE ELEMENTS
+   ============================================ */
+
+/* Button reset styles */
+button {
     cursor: pointer;
     background: none;
     border: none;
 }
 
-#firstWrapper{
+/* ============================================
+   HEADER AND NAVIGATION
+   ============================================ */
+
+/* First wrapper - header container */
+#navOuterWrapper {
     display: flex;
     position: absolute;
     justify-content: center;
+    background-color: none;
+    height: 2rem;
     padding: 2rem;
+    top: 0;
     width: 100%;
+    z-index: 1;
 }
 
-#menuButton{
-    display: flex;
+/* Menu button */
+#menuButton {
     background: none;
     border: none;
     position: absolute;
     left: 1rem;
+    transition: all .2s ease;
 }
 
-#navigateButtons{
+#menuButton:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(.2rem .2rem .1rem black);
+}
+
+#closeButton:hover {
+    transition: all .2s ease;
+}
+
+#closeButton:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(.2rem .2rem .1rem black);
+}
+
+
+
+/* Navigation buttons container */
+#navigateButtons {
     position: absolute;
     right: 0;
     background-color: black;
-    transform: translateY(-3.6rem);
+    transform: translateY(-3.8rem);
 }
 
-#navigateButtons button{
+/* Individual navigation buttons */
+#navigateButtons button {
     background-color: black;
     border: none;
     height: 3.5rem;
     width: 3.5rem;
 }
 
-#shopNowButton{
+/* Navigation menu */
+#navWrapper{
+    display: flex;
+    transform: translateY(-30vw);
+    background-color:white;
+    transition: all .5s ease-in-out;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+/* Active navigation state */
+#navWrapper.active {
+    z-index: 999;
+    color: black;
+    transform: translateY(0vw);
+}
+
+#navWrapper nav {
+    display: flex;
+}
+
+#logo{
+    position: fixed;
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+/* Image wrapper - carousel container */
+#imageWrapper {
+    display: flex;
+}
+
+/* Hero image */
+.heroImg {
+    min-width: 100dvw;
+    width: 100%;
+}
+
+/* Shop Now button */
+#shopNowButton {
     letter-spacing: .5rem;
     text-transform: uppercase;
     font-weight: 600;
 }
 
-#imageWrapper{
-    display: flex;
-    transform: translateX(0%);
-    transition: all 1s ease;
+/* ============================================
+   CONTENT SECTIONS
+   ============================================ */
+
+/* First section - visible */
+.first {
+
 }
 
-ul{
-    list-style: none;
-    gap: 1rem;
-}
-
-nav{
+/* Second section - hidden */
+.second {
     display: none;
 }
 
-nav.active{
-    display: flex;
-}
-
-.heroImg{
-    min-width: 100dvw;
-    width: 100%;
-    transform: translateX(0%);
-}
-
-
-.first{
-
-}
-
-.second{
+/* Third section - hidden */
+.third {
     display: none;
 }
 
-.third{
-    display: none;
-}
-
-.textWrapper{
+/* Text wrapper padding */
+.textWrapper {
     padding-inline: 1rem;
 }
 
-#secondWrapper img{
+/* ============================================
+   SECOND WRAPPER AND IMAGES
+   ============================================ */
+
+/* Images in second wrapper */
+#secondWrapper img {
     width: 100%;
     margin-top: 2rem;
 }
 
-footer{
+/* ============================================
+   LISTS
+   ============================================ */
+
+/* Unordered list */
+ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin: 0;
+    text-transform: lowercase;
+    font-weight: 600;
+}
+
+li:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(.2rem .2rem .1rem black);
+    cursor: pointer;
+}
+
+
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+/* Footer - hidden */
+footer {
     display: none;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+/* ============================================
+   ATTRIBUTION
+   ============================================ */
+
+/* Attribution text */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+/* Attribution link */
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

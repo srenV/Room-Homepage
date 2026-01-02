@@ -15,26 +15,37 @@
 <body>
   <header></header>
   <main>
-    <div>
-      <div id="firstWrapper">
+    <div id="firstWrapper">
+      <div id="navOuterWrapper">
         <button id="menuButton"><img src="./images/icon-hamburger.svg" alt=""></button>
         <img id="logo" src="./images/logo.svg" alt="">
-        <nav id="navWrapper">
-          <button id="closeButton"><img src="./images/icon-close.svg" alt=""></button>
-          <ul>
-            <li>Home</li>
-            <li>Shop</li>
-            <li>About</li>
-            <li>Contact</li>
-          </ul>
-        </nav>
+        <div id="navWrapper">
+          <nav>
+            <button id="closeButton"><img src="./images/icon-close.svg" alt=""></button>
+            <ul>
+              <li>Home</li>
+              <li>Shop</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </nav>
+        </div>
       </div>
 
 
       <div id="imageWrapper">
-        <img id="firstHero" class=" heroImg image" src="./images/mobile-image-hero-1.jpg" alt="">
-        <img id="secondHero" class=" heroImg image" src="./images/mobile-image-hero-2.jpg" alt="">
-        <img id="thirdHero" class=" heroImg image" src="./images/mobile-image-hero-3.jpg" alt="">
+        <picture id="firstHero" class=" heroImg image">
+          <source media="(min-width: 450px)" srcset="./images/desktop-image-hero-1.jpg">
+          <img   src="./images/mobile-image-hero-1.jpg" alt="">
+        </picture>
+        <picture id="secondHero" class=" heroImg image">
+          <source media="(min-width: 450px)" srcset="./images/desktop-image-hero-2.jpg">
+          <img   src="./images/mobile-image-hero-2.jpg" alt="">
+        </picture>
+        <picture id="thirdHero" class=" heroImg image">
+          <source media="(min-width: 450px)" srcset="./images/desktop-image-hero-3.jpg">
+          <img   src="./images/mobile-image-hero-3.jpg" alt="">
+        </picture>
       </div>
 
       <div id="navigateButtons">

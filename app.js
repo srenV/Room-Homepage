@@ -1,5 +1,8 @@
 const backButton = document.getElementById('backButton')
 const forwardButton = document.getElementById('forwardButton')
+const menuButton = document.getElementById('menuButton')
+const closeButton = document.getElementById('closeButton')
+const navWrapper = document.getElementById('navWrapper')
 
 const items = document.querySelectorAll('.item')
 const images = document.querySelectorAll('.image')
@@ -33,3 +36,11 @@ function updateSection() {
         }
     })
 }
+
+menuButton.addEventListener('click', () => {
+    navWrapper.classList.add('active')
+})
+
+closeButton.addEventListener('click', () => {
+    navWrapper.classList.remove('active')
+})
