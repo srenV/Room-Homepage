@@ -14,43 +14,43 @@
 
 <body>
   <header></header>
-  <main>
+  <main id="mainContent">
     <div id="firstWrapper">
       <div id="navOuterWrapper">
-        <button id="menuButton"><img src="./images/icon-hamburger.svg" alt=""></button>
-        <img id="logo" src="./images/logo.svg" alt="">
-        <div id="navWrapper">
+        <button id="menuButton" aria-label="Toggle navigation menu"><img src="./images/icon-hamburger.svg" alt=""></button>
+        <img id="logo" src="./images/logo.svg" alt="Room Homepage Logo">
+        <div id="navWrapper" role="navigation" aria-label="Main navigation">
           <nav>
-            <button id="closeButton"><img src="./images/icon-close.svg" alt=""></button>
+            <button id="closeButton" aria-label="Close navigation menu"><img src="./images/icon-close.svg" alt=""></button>
             <ul>
-              <li>Home</li>
-              <li>Shop</li>
-              <li>About</li>
-              <li>Contact</li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#shop">Shop</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
         </div>
       </div>
 
 
-      <div id="imageWrapper">
+      <div id="imageWrapper" role="region" aria-label="Hero carousel" aria-live="polite">
         <picture id="firstHero" class=" heroImg image">
           <source media="(min-width: 450px)" srcset="./images/desktop-image-hero-1.jpg">
-          <img   src="./images/mobile-image-hero-1.jpg" alt="">
+          <img   src="./images/mobile-image-hero-1.jpg" alt="Modern furniture in bright living room">
         </picture>
         <picture id="secondHero" class=" heroImg image">
           <source media="(min-width: 450px)" srcset="./images/desktop-image-hero-2.jpg">
-          <img   src="./images/mobile-image-hero-2.jpg" alt="">
+          <img   src="./images/mobile-image-hero-2.jpg" alt="Contemporary furniture arrangement with dark accents">
         </picture>
         <picture id="thirdHero" class=" heroImg image">
           <source media="(min-width: 450px)" srcset="./images/desktop-image-hero-3.jpg">
-          <img   src="./images/mobile-image-hero-3.jpg" alt="">
+          <img   src="./images/mobile-image-hero-3.jpg" alt="Elegant furniture collection in neutral tones">
         </picture>
       </div>
 
-      <div id="navigateButtons">
-          <button id="backButton"><img src="./images/icon-angle-left.svg" alt=""></button>
-          <button id="forwardButton"><img src="./images/icon-angle-right.svg" alt=""></button>
+      <div id="navigateButtons" role="group" aria-label="Carousel controls">
+          <button id="backButton" aria-label="View previous furniture collection"><img src="./images/icon-angle-left.svg" alt=""></button>
+          <button id="forwardButton" aria-label="View next furniture collection"><img src="./images/icon-angle-right.svg" alt=""></button>
         </div>
 
       <div id="firstTextWrapper" class="textWrapper">
@@ -81,27 +81,27 @@
           </p>
         </div>
 
-        <button id="shopNowButton">Shop now <img src="./images/icon-arrow.svg" alt=""></button>
+        <button id="shopNowButton" aria-label="Shop now and view furniture collection">Shop now <img src="./images/icon-arrow.svg" alt=""></button>
         
       </div>
     </div>
 
-    <div id="secondWrapper">
-      <img src="./images/image-about-dark.jpg" alt="">
+    <section id="secondWrapper">
+      <img src="./images/image-about-dark.jpg" alt="Dark modern furniture display">
       <div id="firstTextWrapper" class="textWrapper">
-        <h3>About our furniture</h3>
+        <h2>About our furniture</h2>
         <p>Our multifunctional collection blends design and function to suit your individual taste.
           Make each room unique, or pick a cohesive theme that best express your interests and what
           inspires you. Find the furniture pieces you need, from traditional to contemporary styles
           or anything in between. Product specialists are available to help you create your dream space.
         </p>
       </div>
-      <img src="./images/image-about-light.jpg" alt="">
-    </div>
+      <img src="./images/image-about-light.jpg" alt="Light minimalist furniture showcase">
+    </section>
 
 
   </main>
-  <footer>
+  <footer role="contentinfo">
     <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">srenV</a>.

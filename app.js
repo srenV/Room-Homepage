@@ -9,6 +9,7 @@ const images = document.querySelectorAll('.image')
 
 let currentIndex = 0
 
+
 backButton.addEventListener('click', () =>{
     currentIndex = (currentIndex - 1 + images.length) % images.length
     updateSection()

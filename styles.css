@@ -18,7 +18,7 @@
 body {
     margin: 0;
     width: 100dvw;
-    overflow-x: hidden;
+    
 }
 
 /* ============================================
@@ -84,7 +84,9 @@ button {
     filter: drop-shadow(.2rem .2rem .1rem black);
 }
 
-#closeButton:hover {
+#closeButton {
+    position: absolute;
+    left: 1rem;
     transition: all .2s ease;
 }
 
@@ -100,7 +102,7 @@ button {
     position: absolute;
     right: 0;
     background-color: black;
-    transform: translateY(-3.8rem);
+    transform: translateY(-3.6rem);
 }
 
 /* Individual navigation buttons */
@@ -114,14 +116,17 @@ button {
 /* Navigation menu */
 #navWrapper{
     display: flex;
-    transform: translateY(-30vw);
+    transform: translateY(-100vw);
     background-color:white;
-    transition: all .5s ease-in-out;
+    transition: all .4s ease-in-out;
     position: absolute;
-    width: 100vw;
+    width: 100dvw;
     top: 0;
     align-items: center;
     padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+
 }
 
 /* Active navigation state */
@@ -143,15 +148,32 @@ button {
    HERO SECTION
    ============================================ */
 
+/* First wrapper - main hero container */
+#firstWrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
 /* Image wrapper - carousel container */
 #imageWrapper {
     display: flex;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 /* Hero image */
 .heroImg {
-    min-width: 100dvw;
     width: 100%;
+    height: auto;
+    display: block;
+    flex-shrink: 0;
+}
+
+/* Hero image inner img tag */
+.heroImg img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Shop Now button */
@@ -203,8 +225,9 @@ button {
 ul {
     display: flex;
     list-style: none;
-    gap: 1rem;
+    gap: 1.5rem;
     margin: 0;
+    padding: 0;
     text-transform: lowercase;
     font-weight: 600;
 }
