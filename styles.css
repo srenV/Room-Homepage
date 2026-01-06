@@ -106,7 +106,7 @@ button {
   position: absolute;
   right: 0;
   background-color: black;
-  transform: translateY(-3.6rem);
+  transform: translateY(-4.8rem);
 }
 
 /* Individual navigation buttons */
@@ -295,8 +295,11 @@ footer {
   }
 
   #navigateButtons{
-    bottom: -10.8%;
-    right: 28rem;
+    bottom: 0;
+    right: unset;
+    transform: translateY(0);
+    transform: translateX(-60%);
+    max-width: fit-content;
   }
 
   #navigateButtons button{
