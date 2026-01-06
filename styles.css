@@ -1,7 +1,7 @@
 /* ============================================
    IMPORTS
    ============================================ */
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
 
 /* ============================================
    GLOBAL STYLES
@@ -9,16 +9,15 @@
 
 /* Universal selector - reset and defaults */
 * {
-    box-sizing: border-box;
-    font-family: 'League Spartan', sans-serif;
-    scrollbar-width: none;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+  scrollbar-width: none;
 }
 
 /* Body container */
 body {
-    margin: 0;
-    width: 100dvw;
-    
+  width: 100dvw;
+  margin: 0;
 }
 
 /* ============================================
@@ -26,20 +25,27 @@ body {
    ============================================ */
 
 /* Headings - uppercase text */
-h1, h2, h3 {
-    text-transform: uppercase;
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
 }
 
 /* Heading 3 specific styling */
 h3 {
-    letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 /* Paragraph text */
 p {
-    color: hsl(0, 0%, 63%);
-    font-weight: 500;
-    line-height: 1.2;
+  color: hsl(0, 0%, 63%);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 /* ============================================
@@ -48,9 +54,9 @@ p {
 
 /* Button reset styles */
 button {
-    cursor: pointer;
-    background: none;
-    border: none;
+  cursor: pointer;
+  background: none;
+  border: none;
 }
 
 /* ============================================
@@ -59,89 +65,86 @@ button {
 
 /* First wrapper - header container */
 #navOuterWrapper {
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    background-color: none;
-    height: 2rem;
-    padding: 2rem;
-    top: 0;
-    width: 100%;
-    z-index: 1;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  background-color: none;
+  height: 2rem;
+  padding: 2rem;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 /* Menu button */
 #menuButton {
-    background: none;
-    border: none;
-    position: absolute;
-    left: 1rem;
-    transition: all .2s ease;
+  background: none;
+  border: none;
+  position: absolute;
+  left: 1rem;
+  transition: all 0.2s ease;
 }
 
 #menuButton:hover {
-    transform: scale(1.1);
-    filter: drop-shadow(.2rem .2rem .1rem black);
+  transform: scale(1.1);
+  filter: drop-shadow(0.2rem 0.2rem 0.1rem black);
 }
 
 #closeButton {
-    position: absolute;
-    left: 1rem;
-    transition: all .2s ease;
+  position: absolute;
+  left: 1rem;
+  transition: all 0.2s ease;
 }
 
 #closeButton:hover {
-    transform: scale(1.1);
-    filter: drop-shadow(.2rem .2rem .1rem black);
+  transform: scale(1.1);
+  filter: drop-shadow(0.2rem 0.2rem 0.1rem black);
 }
-
-
 
 /* Navigation buttons container */
 #navigateButtons {
-    position: absolute;
-    right: 0;
-    background-color: black;
-    transform: translateY(-3.6rem);
+  position: absolute;
+  right: 0;
+  background-color: black;
+  transform: translateY(-3.6rem);
 }
 
 /* Individual navigation buttons */
 #navigateButtons button {
-    background-color: black;
-    border: none;
-    height: 3.5rem;
-    width: 3.5rem;
+  background-color: black;
+  border: none;
+  height: 3.5rem;
+  width: 3.5rem;
 }
 
 /* Navigation menu */
-#navWrapper{
-    display: flex;
-    transform: translateY(-100vw);
-    background-color:white;
-    transition: all .4s ease-in-out;
-    position: absolute;
-    width: 100dvw;
-    top: 0;
-    align-items: center;
-    padding: 2rem 1rem;
-    display: flex;
-    justify-content: center;
-
+#navWrapper {
+  display: flex;
+  transform: translateY(-100vw);
+  background-color: white;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  width: 100dvw;
+  top: 0;
+  align-items: center;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 /* Active navigation state */
 #navWrapper.active {
-    z-index: 999;
-    color: black;
-    transform: translateY(0vw);
+  z-index: 999;
+  color: black;
+  transform: translateY(0vw);
 }
 
 #navWrapper nav {
-    display: flex;
+  display: flex;
 }
 
-#logo{
-    position: fixed;
+#logo {
+  position: fixed;
 }
 
 /* ============================================
@@ -150,37 +153,36 @@ button {
 
 /* First wrapper - main hero container */
 #firstWrapper {
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
 }
 
 /* Image wrapper - carousel container */
 #imageWrapper {
-    display: flex;
-    overflow-x: hidden;
-    width: 100%;
+  display: flex;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* Hero image */
 .heroImg {
-    width: 100%;
-    height: auto;
-    display: block;
-    flex-shrink: 0;
+  width: 100%;
+  height: auto;
+  display: block;
+  flex-shrink: 0;
 }
 
 /* Hero image inner img tag */
 .heroImg img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Shop Now button */
 #shopNowButton {
-    letter-spacing: .5rem;
-    text-transform: uppercase;
-    font-weight: 600;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 /* ============================================
@@ -189,22 +191,21 @@ button {
 
 /* First section - visible */
 .first {
-
 }
 
 /* Second section - hidden */
 .second {
-    display: none;
+  display: none;
 }
 
 /* Third section - hidden */
 .third {
-    display: none;
+  display: none;
 }
 
 /* Text wrapper padding */
 .textWrapper {
-    padding-inline: 1rem;
+  padding-inline: 1rem;
 }
 
 /* ============================================
@@ -213,8 +214,8 @@ button {
 
 /* Images in second wrapper */
 #secondWrapper img {
-    width: 100%;
-    margin-top: 2rem;
+  width: 100%;
+  margin-top: 2rem;
 }
 
 /* ============================================
@@ -223,22 +224,20 @@ button {
 
 /* Unordered list */
 ul {
-    display: flex;
-    list-style: none;
-    gap: 1.5rem;
-    margin: 0;
-    padding: 0;
-    text-transform: lowercase;
-    font-weight: 600;
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  text-transform: lowercase;
+  font-weight: 600;
 }
 
-li:hover{
-    transform: scale(1.1);
-    filter: drop-shadow(.2rem .2rem .1rem black);
-    cursor: pointer;
+li:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0.2rem 0.2rem 0.1rem black);
+  cursor: pointer;
 }
-
-
 
 /* ============================================
    FOOTER
@@ -246,7 +245,7 @@ li:hover{
 
 /* Footer - hidden */
 footer {
-    display: none;
+  display: none;
 }
 
 /* ============================================
@@ -255,11 +254,99 @@ footer {
 
 /* Attribution text */
 .attribution {
-    font-size: 11px;
-    text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 
 /* Attribution link */
 .attribution a {
-    color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 450px) {
+  ul {
+    gap: 2rem;
+  }
+
+  a{
+    color: white;
+  }
+
+  #navWrapper {
+    transform: translateY(0%);
+    position: relative;
+    background-color: transparent;
+    justify-content: start;
+    font-size: 1.1rem;
+  }
+
+  #navOuterWrapper {
+    justify-content: start;
+    align-items: center;
+    background-color: none;
+    top: 0;
+    padding: 4rem;
+    gap: 2rem;
+  }
+
+  #menuButton,
+  #closeButton {
+    display: none;
+  }
+
+  #navigateButtons{
+    bottom: -10.8%;
+    right: 28rem;
+  }
+
+  #navigateButtons button{
+    width: 5rem;
+    height: 5rem;
+  }
+
+  #logo {
+    position: unset;
+  }
+
+  #mainContent {
+    display: flex;
+    flex-direction: column;
+    max-height: 100dvh;
+  }
+  #firstWrapper,
+  #secondWrapper {
+    display: flex;
+    flex-direction: row;
+    min-height: fit-content;
+  }
+
+  #firstWrapper{
+    position: relative;
+  }
+
+  #imageWrapper {
+    min-height: fit-content;
+    flex: 4;
+    display: stretch;
+  }
+
+  #secondTextWrapper {
+    flex: 2;
+    padding: 3rem;
+    place-self: center;
+  }
+
+  #firstTextWrapper {
+    padding: 6rem;
+    place-self: center;
+    flex: 2;
+  }
+
+  #secondWrapper img {
+    flex: 2;
+  }
+
+  #secondWrapper img {
+    margin-top: 0;
+  }
 }
