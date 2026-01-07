@@ -263,15 +263,21 @@ footer {
   color: hsl(228, 45%, 44%);
 }
 
+/* ============================================
+   DESKTOP LAYOUT
+   ============================================ */
+
+/* Desktop / wide screens breakpoint - min-width: 450px */
 @media (min-width: 450px) {
   ul {
     gap: 2.5rem;
   }
 
-  a{
+  a {
     color: white;
   }
 
+  /* Navigation - desktop: show nav inline; align to start and remove mobile overlays */
   #navWrapper {
     transform: translateY(0%);
     position: relative;
@@ -280,6 +286,7 @@ footer {
     font-size: 1.1rem;
   }
 
+  /* Header wrapper - desktop: increased horizontal padding and spacing */
   #navOuterWrapper {
     justify-content: start;
     align-items: center;
@@ -289,33 +296,38 @@ footer {
     gap: 3rem;
   }
 
+  /* Desktop: hide mobile menu buttons and use full navigation */
   #menuButton,
   #closeButton {
     display: none;
   }
 
-  #navigateButtons{
+  /* Side navigation - desktop: reposition controls and adjust transforms */
+  #navigateButtons {
     bottom: 0;
     right: unset;
     transform: translateY(0);
-    transform: translateX(-25.5rem);
+    transform: translateX(-60%);
     max-width: fit-content;
   }
 
-  #navigateButtons button{
+  #navigateButtons button {
     width: 5rem;
     height: 5rem;
   }
 
+  /* Logo - desktop: place logo in normal document flow */
   #logo {
     position: unset;
   }
 
+  /* Main content - desktop: stacked column layout with constrained max height */
   #mainContent {
     display: flex;
     flex-direction: column;
     max-height: 100dvh;
   }
+  /* Layout - desktop: switch primary sections to two-column rows */
   #firstWrapper,
   #secondWrapper {
     display: flex;
@@ -323,57 +335,67 @@ footer {
     min-height: fit-content;
   }
 
-  #firstWrapper{
+  #firstWrapper {
     position: relative;
   }
 
+  /* Image area - desktop: images take priority with larger flex value */
   #imageWrapper {
     min-height: fit-content;
     flex: 4;
     display: stretch;
   }
 
+  /* Secondary text - desktop: centered column with ample padding */
   #secondTextWrapper {
     flex: 2;
     padding: 3rem;
     place-self: center;
   }
 
+  /* Primary text - desktop: left-aligned with wider horizontal padding */
   #firstTextWrapper {
     padding-inline: 6rem;
     display: flex;
     flex-direction: column;
+    align-items: start;
     justify-content: center;
-    place-items: center;
     flex: 2;
   }
 
-  #firstTextWrapper h2{
+  /* Headline - desktop: larger size and tighter line-height */
+  #firstTextWrapper h2 {
     margin: 0;
-    line-height: .8;
+    line-height: 0.8;
     font-size: 4rem;
     text-transform: none;
   }
 
-  #firstTextWrapper .item{
+  /* Item container - fixed width for readable measure */
+  #firstTextWrapper .item {
     width: 35rem;
   }
 
-  #firstTextWrapper, #secondWrapper p{
+  /* Body copy - increased font size for desktop readability */
+  #firstTextWrapper,
+  #secondWrapper p {
     font-size: 1.3rem;
   }
 
-  #shopNowButton{
+  /* CTA - larger font and greater letter-spacing on desktop */
+  #shopNowButton {
     font-size: 1.3rem;
-    letter-spacing: .7rem;
+    letter-spacing: 0.7rem;
   }
 
+  /* Secondary images - balanced by flex and remove extra top margin */
   #secondWrapper img {
     flex: 2;
   }
 
+  /* Secondary headings - increased tracking for emphasis */
   #secondWrapper h2 {
-    letter-spacing: .4rem;
+    letter-spacing: 0.4rem;
   }
 
   #secondWrapper img {
