@@ -7,36 +7,36 @@
    GLOBAL STYLES
    ============================================ */
 
-/* Universal selector - reset and defaults */
+/* Global reset and base styles */
 * {
   box-sizing: border-box;
   font-family: "League Spartan", sans-serif;
   scrollbar-width: none;
 }
 
-/* Body container */
+/* Body element styles */
 body {
-  width: 100dvw;
   margin: 0;
+  width: 100dvw;
 }
 
 /* ============================================
    TYPOGRAPHY
    ============================================ */
 
-/* Headings - uppercase text */
+/* Headings - uppercase transformation */
 h1,
 h2,
 h3 {
   text-transform: uppercase;
 }
 
-/* Heading 3 specific styling */
+/* H3 heading specific styles */
 h3 {
   letter-spacing: 0.1rem;
 }
 
-/* Paragraph text */
+/* Paragraph styles */
 p {
   color: hsl(0, 0%, 63%);
   font-weight: 500;
@@ -44,8 +44,8 @@ p {
 }
 
 a {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
 }
 
 /* ============================================
@@ -54,62 +54,63 @@ a {
 
 /* Button reset styles */
 button {
-  cursor: pointer;
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 /* ============================================
    HEADER AND NAVIGATION
    ============================================ */
 
-/* First wrapper - header container */
+/* Navigation outer wrapper */
 #navOuterWrapper {
-  display: flex;
-  position: absolute;
-  justify-content: center;
   background-color: none;
+  display: flex;
   height: 2rem;
+  justify-content: center;
   padding: 2rem;
+  position: absolute;
   top: 0;
   width: 100%;
   z-index: 1;
 }
 
-/* Menu button */
+/* Hamburger menu button */
 #menuButton {
   background: none;
   border: none;
-  position: absolute;
   left: 1rem;
+  position: absolute;
   transition: all 0.2s ease;
 }
 
 #menuButton:hover {
-  transform: scale(1.1);
   filter: drop-shadow(0.2rem 0.2rem 0.1rem black);
+  transform: scale(1.1);
 }
 
+/* Close menu button */
 #closeButton {
-  position: absolute;
   left: 1rem;
+  position: absolute;
   transition: all 0.2s ease;
 }
 
 #closeButton:hover {
-  transform: scale(1.1);
   filter: drop-shadow(0.2rem 0.2rem 0.1rem black);
+  transform: scale(1.1);
 }
 
-/* Navigation buttons container */
+/* Hero navigation arrows container */
 #navigateButtons {
+  background-color: black;
   position: absolute;
   right: 0;
-  background-color: black;
   transform: translateY(-4.8rem);
 }
 
-/* Individual navigation buttons */
+/* Hero navigation arrow buttons */
 #navigateButtons button {
   background-color: black;
   border: none;
@@ -117,32 +118,32 @@ button {
   width: 3.5rem;
 }
 
-/* Navigation menu */
+/* Mobile navigation menu overlay */
 #navWrapper {
-  display: flex;
-  transform: translateY(-100vw);
-  background-color: white;
-  transition: all 0.4s ease-in-out;
-  position: absolute;
-  width: 100dvw;
-  top: 0;
   align-items: center;
-  padding: 2rem 1rem;
+  background-color: white;
   display: flex;
   justify-content: center;
+  padding: 2rem 1rem;
+  position: absolute;
+  top: 0;
+  transform: translateY(-100vw);
+  transition: all 0.4s ease-in-out;
+  width: 100dvw;
 }
 
-/* Active navigation state */
+/* Active mobile navigation menu state */
 #navWrapper.active {
-  z-index: 999;
   color: black;
   transform: translateY(0vw);
+  z-index: 999;
 }
 
 #navWrapper nav {
   display: flex;
 }
 
+/* Logo element */
 #logo {
   position: fixed;
 }
@@ -151,59 +152,59 @@ button {
    HERO SECTION
    ============================================ */
 
-/* First wrapper - main hero container */
+/* Hero section wrapper */
 #firstWrapper {
   width: 100%;
 }
 
-/* Image wrapper - carousel container */
+/* Hero images carousel wrapper */
 #imageWrapper {
   display: flex;
   overflow-x: hidden;
   width: 100%;
 }
 
-/* Hero image */
+/* Hero image slide */
 .heroImg {
-  width: 100%;
-  height: auto;
   display: block;
   flex-shrink: 0;
-}
-
-/* Hero image inner img tag */
-.heroImg img {
-  width: 100%;
   height: auto;
-  display: block;
+  width: 100%;
 }
 
-/* Shop Now button */
+/* Hero image element */
+.heroImg img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+/* Shop now call-to-action button */
 #shopNowButton {
+  font-weight: 600;
   letter-spacing: 0.5rem;
   text-transform: uppercase;
-  font-weight: 600;
 }
 
 /* ============================================
    CONTENT SECTIONS
    ============================================ */
 
-/* First section - visible */
+/* About section - visible */
 .first {
 }
 
-/* Second section - hidden */
+/* Discover section - hidden */
 .second {
   display: none;
 }
 
-/* Third section - hidden */
+/* Footer section - hidden */
 .third {
   display: none;
 }
 
-/* Text wrapper padding */
+/* Section text wrapper padding */
 .textWrapper {
   padding-inline: 1rem;
 }
@@ -212,38 +213,38 @@ button {
    SECOND WRAPPER AND IMAGES
    ============================================ */
 
-/* Images in second wrapper */
+/* Discover section images */
 #secondWrapper img {
-  width: 100%;
   margin-top: 2rem;
+  width: 100%;
 }
 
 /* ============================================
    LISTS
    ============================================ */
 
-/* Unordered list */
+/* Navigation links list */
 ul {
   display: flex;
-  list-style: none;
+  font-weight: 600;
   gap: 1.5rem;
+  list-style: none;
   margin: 0;
   padding: 0;
   text-transform: lowercase;
-  font-weight: 600;
 }
 
 li:hover {
-  transform: scale(1.1);
-  filter: drop-shadow(0.2rem 0.2rem 0.1rem black);
   cursor: pointer;
+  filter: drop-shadow(0.2rem 0.2rem 0.1rem black);
+  transform: scale(1.1);
 }
 
 /* ============================================
    FOOTER
    ============================================ */
 
-/* Footer - hidden */
+/* Footer - hidden on mobile */
 footer {
   display: none;
 }
@@ -252,13 +253,13 @@ footer {
    ATTRIBUTION
    ============================================ */
 
-/* Attribution text */
+/* Frontend Mentor attribution text */
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 
-/* Attribution link */
+/* Attribution link styles */
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
@@ -267,7 +268,7 @@ footer {
    DESKTOP LAYOUT
    ============================================ */
 
-/* Desktop / wide screens breakpoint - min-width: 450px */
+/* Desktop responsive layout - min-width: 450px */
 @media (min-width: 450px) {
   ul {
     gap: 2.5rem;
@@ -277,57 +278,57 @@ footer {
     color: white;
   }
 
-  /* Navigation - desktop: show nav inline; align to start and remove mobile overlays */
+  /* Desktop navigation - inline layout */
   #navWrapper {
-    transform: translateY(0%);
-    position: relative;
     background-color: transparent;
-    justify-content: start;
     font-size: 1.1rem;
+    justify-content: start;
+    position: relative;
+    transform: translateY(0%);
   }
 
-  /* Header wrapper - desktop: increased horizontal padding and spacing */
+  /* Desktop header wrapper - increased padding */
   #navOuterWrapper {
-    justify-content: start;
     align-items: center;
     background-color: none;
-    top: 0;
-    padding: 5rem 4rem;
     gap: 3rem;
+    justify-content: start;
+    padding: 5rem 4rem;
+    top: 0;
   }
 
-  /* Desktop: hide mobile menu buttons and use full navigation */
+  /* Hide mobile menu buttons on desktop */
   #menuButton,
   #closeButton {
     display: none;
   }
 
-  /* Side navigation - desktop: reposition controls and adjust transforms */
+  /* Desktop hero navigation arrows - repositioned */
   #navigateButtons {
     bottom: 0;
+    max-width: fit-content;
     right: unset;
     transform: translateY(0);
-    transform: translateX(-60%);
-    max-width: fit-content;
+    transform: translateX(-59%);
   }
 
   #navigateButtons button {
-    width: 5rem;
     height: 5rem;
+    width: 5rem;
   }
 
-  /* Logo - desktop: place logo in normal document flow */
+  /* Desktop logo - static positioning */
   #logo {
     position: unset;
   }
 
-  /* Main content - desktop: stacked column layout with constrained max height */
+  /* Desktop main content - column layout */
   #mainContent {
     display: flex;
     flex-direction: column;
-    max-height: 100dvh;
+    height: 100dvh;
   }
-  /* Layout - desktop: switch primary sections to two-column rows */
+  /* Desktop layout - two-column sections */
   #firstWrapper,
   #secondWrapper {
     display: flex;
@@ -339,61 +340,62 @@ footer {
     position: relative;
   }
 
-  /* Image area - desktop: images take priority with larger flex value */
+  /* Desktop hero images - larger flex */
   #imageWrapper {
-    min-height: fit-content;
-    flex: 4;
     display: stretch;
+    flex: 6;
+    min-height: fit-content;
   }
 
-  /* Secondary text - desktop: centered column with ample padding */
+  /* Desktop secondary text wrapper */
   #secondTextWrapper {
     flex: 2;
     padding: 3rem;
     place-self: center;
   }
 
-  /* Primary text - desktop: left-aligned with wider horizontal padding */
+  /* Desktop primary text wrapper */
   #firstTextWrapper {
-    padding-inline: 6rem;
-    display: flex;
-    flex-direction: column;
     align-items: start;
+    display: flex;
+    flex: 3;
+    flex-direction: column;
     justify-content: center;
-    flex: 2;
+    padding-inline: 6rem;
   }
 
-  /* Headline - desktop: larger size and tighter line-height */
+  /* Desktop headline styles */
   #firstTextWrapper h2 {
-    margin: 0;
+    font-size: 2.5rem;
     line-height: 0.8;
-    font-size: 4rem;
+    margin: 0;
     text-transform: none;
   }
 
-  /* Item container - fixed width for readable measure */
-  #firstTextWrapper .item {
-    width: 35rem;
-  }
-
-  /* Body copy - increased font size for desktop readability */
+  /* Desktop body text - larger font */
   #firstTextWrapper,
   #secondWrapper p {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
-  /* CTA - larger font and greater letter-spacing on desktop */
+  /* Desktop CTA button styles */
   #shopNowButton {
-    font-size: 1.3rem;
+    font-size: 1rem;
     letter-spacing: 0.7rem;
   }
 
-  /* Secondary images - balanced by flex and remove extra top margin */
+  /* Desktop secondary images */
   #secondWrapper img {
-    flex: 2;
+    flex: 4.1;
+    height: fit-content;
+    object-fit: contain;
   }
 
-  /* Secondary headings - increased tracking for emphasis */
+  #secondTextWrapper {
+    flex: 4.2;
+  }
+
+  /* Desktop secondary headings */
   #secondWrapper h2 {
     letter-spacing: 0.4rem;
   }
