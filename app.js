@@ -21,11 +21,19 @@ forwardButton.addEventListener('click', () =>{
 })
 
 function updateSection() {
-    images.forEach((img, index) => {
-        if (index === currentIndex) {
-            img.style.display = 'block'
-        } else {
-            img.style.display = 'none'
+    images.forEach((img) => {
+        switch (currentIndex) {
+            case 0:
+                img.style.transform = 'translateX(0%)'
+                break;
+             case 1:
+                img.style.transform = 'translateX(-100%)'
+                break;
+             case 2:
+                img.style.transform = 'translateX(-200%)'
+                break;
+            default:
+                break;
         }
     })
 

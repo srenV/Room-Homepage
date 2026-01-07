@@ -170,6 +170,7 @@ button {
   flex-shrink: 0;
   height: auto;
   width: 100%;
+  transition: all 1s ease-in-out;
 }
 
 /* Hero image element */
@@ -192,6 +193,7 @@ button {
 
 /* About section - visible */
 .first {
+  display: block;
 }
 
 /* Discover section - hidden */
