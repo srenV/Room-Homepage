@@ -265,7 +265,7 @@ footer {
 
 @media (min-width: 450px) {
   ul {
-    gap: 2rem;
+    gap: 2.5rem;
   }
 
   a{
@@ -285,8 +285,8 @@ footer {
     align-items: center;
     background-color: none;
     top: 0;
-    padding: 4rem;
-    gap: 2rem;
+    padding: 5rem 4rem;
+    gap: 3rem;
   }
 
   #menuButton,
@@ -340,13 +340,40 @@ footer {
   }
 
   #firstTextWrapper {
-    padding: 6rem;
-    place-self: center;
+    padding-inline: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
     flex: 2;
+  }
+
+  #firstTextWrapper h2{
+    margin: 0;
+    line-height: .8;
+    font-size: 4rem;
+    text-transform: none;
+  }
+
+  #firstTextWrapper .item{
+    width: 35rem;
+  }
+
+  #firstTextWrapper, #secondWrapper p{
+    font-size: 1.3rem;
+  }
+
+  #shopNowButton{
+    font-size: 1.3rem;
+    letter-spacing: .7rem;
   }
 
   #secondWrapper img {
     flex: 2;
+  }
+
+  #secondWrapper h2 {
+    letter-spacing: .4rem;
   }
 
   #secondWrapper img {
